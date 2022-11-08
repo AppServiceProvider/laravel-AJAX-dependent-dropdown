@@ -7,6 +7,7 @@ use Illuminate\Database\Seeder;
 use App\Models\Country;
 use App\Models\State;
 use App\Models\City;
+  
 class CountrySateCitySeeder extends Seeder
 {
     /**
@@ -16,11 +17,6 @@ class CountrySateCitySeeder extends Seeder
      */
     public function run()
     {
-                /*------------------------------------------
-        --------------------------------------------
-        US Country Data
-        --------------------------------------------
-        --------------------------------------------*/
         $country = Country::create(['name' => 'United State']);
   
         $state = State::create(['country_id' => $country->id, 'name' => 'Florida']);
